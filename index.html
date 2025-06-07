@@ -16,13 +16,20 @@
   <div class="logo">
     <img src="images/aidlog.png" alt="AIDFI logo - Alternative Indigenous Development Foundation Inc." class="profile-pic">
   </div>
-  <nav id="nav-menu">
+  <div class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-controls="nav-menu" aria-expanded="false" role="button" tabindex="0">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<nav id="nav-menu">
   <a href="#hero">Home</a>
   <a href="#our-work">Our Work</a>
   <a href="#programs">Our Programs</a>
   <a href="#about-us">About Us</a>
   <a href="#get-involved">Get Involved</a>
 </nav>
+
   <div class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-controls="nav-menu" aria-expanded="false" role="button" tabindex="0">
     <span></span>
     <span></span>
@@ -152,6 +159,7 @@
 </div>
 
 <script>
+  document.addEventListener("DOMContentLoaded", function () {
   const toggle = document.getElementById('menu-toggle');
   const navMenu = document.getElementById('nav-menu');
 
@@ -160,6 +168,7 @@
     const expanded = toggle.getAttribute('aria-expanded') === 'true';
     toggle.setAttribute('aria-expanded', !expanded);
   });
+});
 </script>
 
 <script>

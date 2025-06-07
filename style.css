@@ -543,4 +543,32 @@ nav a:hover, nav a:focus {
     display: flex;
   }
 }
+/* Show hamburger on small screens */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 105, 148, 0.9);
+    position: absolute;
+    top: 72px; /* below header */
+    right: 0;
+    width: 200px;
+    padding: 16px;
+    border-radius: 0 0 0 8px;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  nav a {
+    padding: 12px 8px;
+    border-bottom: 1px solid #0099ff;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+}
+
 

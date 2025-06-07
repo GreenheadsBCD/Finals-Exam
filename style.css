@@ -35,7 +35,6 @@ body {
 }
 
 /* Header */
-/* Header */
 header {
   background: transparent;
   color: #004466;
@@ -83,7 +82,6 @@ nav a:hover, nav a:focus {
   margin: 4px 0;
   border-radius: 2px;
 }
-
 
 /* Hero Section */
 .hero {
@@ -526,36 +524,3 @@ nav a:hover, nav a:focus {
     display: flex;
   }
 }
-/* Responsive Navigation */
-@media screen and (max-width: 768px) {
-  nav {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 80px;
-    right: 0;
-    background-color: rgba(255, 255, 255, 0.95);
-    width: 200px;
-    padding: 1rem;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    z-index: 1000;
-  }
-
-  nav.active {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 24px;
-    right: 32px;
-    z-index: 1001;
-  }
-
-  header {
-    position: relative;
-  }
-}
-

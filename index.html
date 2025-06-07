@@ -161,6 +161,14 @@
     const expanded = toggle.getAttribute('aria-expanded') === 'true';
     toggle.setAttribute('aria-expanded', !expanded);
   });
+// Close nav menu when any nav link is clicked
+document.querySelectorAll('#nav-menu a').forEach(link => {
+  link.addEventListener('click', () => {
+    navMenu.classList.remove('active');
+    toggle.setAttribute('aria-expanded', 'false');
+  });
+});
+
 </script>
 
 <script>

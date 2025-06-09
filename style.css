@@ -494,7 +494,7 @@ nav a:hover, nav a:focus {
     position: fixed;
     top: 56px;
     right: 0;
-    background: transparent; /* or transparent if you prefer */
+    background: linear-gradient(to bottom, #b2eaff, #00aaff); /* color scheme background */
     height: 100vh;
     width: 200px;
     flex-direction: column;
@@ -502,6 +502,8 @@ nav a:hover, nav a:focus {
     transform: translateX(100%);
     transition: transform 0.3s ease;
     z-index: 1000;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
   }
 
   nav.active {
@@ -510,12 +512,13 @@ nav a:hover, nav a:focus {
 
   nav a {
     padding: 16px 32px;
-    color: #006994;
+    color: #004466;
     font-weight: 600;
     text-decoration: none;
   }
 
-  nav a:hover, nav a:focus {
+  nav a:hover,
+  nav a:focus {
     text-decoration: underline;
   }
 
@@ -534,5 +537,3 @@ nav a:hover, nav a:focus {
     border-radius: 2px;
   }
 }
-
-
